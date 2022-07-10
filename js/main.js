@@ -1,4 +1,11 @@
 
+const alterar = document.querySelector(".alterar")
+
+    alterar.addEventListener("click", trocaImagem);
+    function trocaImagem(cor){
+    document.querySelector(".robo").src="img/Robotron 2000 - " + cor + "/Robotron 2000 - " + cor + ".png";
+   }
+
 const controle = document.querySelectorAll("[data-controle]")
 const estatisticas = document.querySelectorAll("[data-estatistica]")
 const pecas = {

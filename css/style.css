@@ -1,3 +1,4 @@
+
 :root {
     --main-cinza: #CCCCCC;
     --main-branco: #FFFFFF;
@@ -29,18 +30,54 @@ main {
     gap: 1vw;
 }
 
+.alterar {
+    margin: 2px;
+    width: 200px;
+}
+
+.botoes {
+   position: absolute;
+   right: -85%;
+   bottom:105%;
+   display: flex;
+    
+}
+
+
+.azul{
+    background-color:blue;
+    color: white
+}
+.amarelo{
+    background-color: yellow;
+}
+.branco{
+    background-color: white;
+}
+.preto{
+    background-color: black;
+    color: white
+}
+.rosa{
+    background-color:  pink;
+}
+.vermelho{
+    background-color: red;
+}
+
 .robotron {
     background: url(../img/estrutura.png) no-repeat;
     background-position: center center;
     margin: 0;
-    flex-basis: 40%;
     position: relative;
+    width: 60%;
+   
 }
 
 .robo {
     height: 110%;
     z-index: 1;
-    position: absolute;
+    position: relative;
     left: -20%;
     top: -5%;
 }
@@ -132,10 +169,11 @@ main {
 }
 
 .producao {
-    margin-top: 1em;
+    bottom: 14%;
+    position: absolute;
     font-size: 2em;
     text-transform: uppercase;
-    padding: 0.2em 1em;
+    padding: 0.2em 0.5em;
     float: right;
     border: 3px solid var(--main-branco);
     background: var(--main-branco);
@@ -143,7 +181,12 @@ main {
     cursor: pointer;
 }
 
-.producao:hover {
+.alterar{
+    cursor: pointer;
+    border: 3px solid var(--main-branco);
+}
+
+.producao:hover,.alterar:hover {
     background: var(--main-preto);
     color: var(--main-branco)
 }
@@ -209,14 +252,14 @@ main {
     margin: 10px 0 0;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 600px) {
     body { 
         font-size: 14px;
     }
     main {
-        width: 90vw;
-        height: 80vh;
-        margin: 5vh auto;
+        width: 60vw;
+        height: 60vh;
+        margin: 3vh auto;
     }
 }
 
